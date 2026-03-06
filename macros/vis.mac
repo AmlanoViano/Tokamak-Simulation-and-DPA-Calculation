@@ -1,0 +1,20 @@
+/vis/open OGL 800x600
+
+/vis/drawVolume
+
+/vis/viewer/set/viewpointThetaPhi 70 20
+/vis/viewer/set/style surface
+/vis/viewer/zoom 1.4
+
+/vis/scene/add/trajectories smooth
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add neutron
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set neutron green
+/vis/modeling/trajectories/drawByParticleID-0/setRGBA proton 1 0 0 1
+/vis/modeling/trajectories/drawByParticleID-0/setRGBA alpha 0 0 1 1
+
+/vis/scene/endOfEventAction accumulate 200
+
+# Run 500 events 
+/run/beamOn 500

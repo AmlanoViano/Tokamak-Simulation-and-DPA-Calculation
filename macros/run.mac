@@ -1,0 +1,6 @@
+/run/numberOfThreads 4
+/tracking/verbose 0
+/run/initialize
+
+# Run 100,000 events
+/run/beamOn 100000
