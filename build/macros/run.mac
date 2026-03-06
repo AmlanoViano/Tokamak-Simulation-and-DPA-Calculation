@@ -1,0 +1,9 @@
+# Batch run macro — no visualization, pure data collection
+# Run this for serious statistics: ./tokamak_sim macros/run.mac
+
+/run/numberOfThreads 4
+/tracking/verbose 0
+/run/initialize
+
+# Run 100,000 events for good statistics
+/run/beamOn 100000

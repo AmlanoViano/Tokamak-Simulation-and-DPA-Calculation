@@ -1,0 +1,26 @@
+# Visualization macro — opens Qt window showing torus + neutron tracks
+
+/vis/open OGL 800x600
+
+# Draw the geometry
+/vis/drawVolume
+
+# Viewpoint — angled to see torus clearly
+/vis/viewer/set/viewpointThetaPhi 70 20
+/vis/viewer/set/style surface
+/vis/viewer/zoom 1.4
+
+# Show neutron tracks in green, secondary particles in red
+/vis/scene/add/trajectories smooth
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add neutron
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set neutron green
+/vis/modeling/trajectories/drawByParticleID-0/setRGBA proton 1 0 0 1
+/vis/modeling/trajectories/drawByParticleID-0/setRGBA alpha 0 0 1 1
+
+# Accumulate tracks across events
+/vis/scene/endOfEventAction accumulate 200
+
+# Run 500 events interactively to see tracks
+/run/beamOn 500

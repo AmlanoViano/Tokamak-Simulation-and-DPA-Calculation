@@ -1,0 +1,3 @@
+/home/amlan-halder/tokamak_sim/build/CMakeFiles/tokamak_sim.dir
+/home/amlan-halder/tokamak_sim/build/CMakeFiles/edit_cache.dir
+/home/amlan-halder/tokamak_sim/build/CMakeFiles/rebuild_cache.dir
