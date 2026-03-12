@@ -1,5 +1,5 @@
 # Tokamak Simulation and DPA Calculation
-This simulation is based on GEANT4, using C++ and Python to simulate neutron beams within a tokamak reactor using an anisotropic source, and calculating Displacement per atom (DPA) for different wall geometries (corrugated and grooved). The aim is to see how angle of incidence of the beam on the reactor wall varies for different geometries and affects DPA. The torus CAD models are loaded using CADMesh.
+This simulation is based on Geant4, using C++ and Python to simulate neutron beams within a tokamak reactor using an anisotropic source, and calculating Displacement per atom (DPA) for different wall geometries (corrugated and grooved). The aim is to see how angle of incidence of the beam on the reactor wall varies for different geometries and affects DPA. The torus CAD models are loaded using CADMesh.
 
 ## Neutron Source: D-T Fusion Plasma
 
